@@ -1,0 +1,262 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color:#005086;
+    color:white;
+}
+
+.img-move-wrapper{
+    border:0px solid #005086 ;
+    position:relative;
+    overflow:hidden;
+    max-width: 1020px;
+    height: 570px;
+    margin:0 auto;
+    background-color:#fca109 ;
+    mask-image: url('../images/mask.svg'); 
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+  .mask{
+    background-image: url('../images/mask.svg'); 
+    background-repeat: no-repeat;
+    width: 1024px;
+    height: 700px;
+    position: absolute;
+    transition: 1.5s ease; 
+  }
+      
+.logo{
+	width: 120px;	
+	background-color:transparent;	
+}
+
+picture{
+	display: flex; 
+	justify-content: center;
+	padding: 20px 0px;
+}
+
+
+.navigation{
+    background-color:transparent;
+    display: flex; 
+    justify-content: center;
+}
+
+.navigation li{
+    padding-right: 25px;
+	display: inline-block;
+	list-style: none;
+	text-decoration: none;
+}
+
+a{
+	color: #ffa102;
+	list-style: none;
+	text-decoration: none;
+}
+ .Hide{
+      background-color:#fca109 ;
+      height: auto;
+      width: 150px;
+      border-radius: 5px;
+      color:white;
+      display: block;
+      cursor: pointer;
+      display: inline-block;
+      padding:10px 0px;
+     
+  }
+
+  .show{
+    background-color:#fca109 ;
+    height: auto;
+    width: 150px;
+    border-radius: 5px;
+    color:white;
+    display: block;
+    cursor: pointer;
+    display: inline-block;
+    padding:10px 0px;
+   
+}
+
+
+.one{
+   background-image: url('../images/slide-1.svg'); 
+   background-repeat: no-repeat;
+   width: 1024px;
+   height: 700px;
+   position: absolute;
+   transition: 1.5s ease;
+}
+
+.two{
+    background-image: url('../images/slide-4.svg'); 
+    background-repeat: no-repeat;
+    width: 1024px;
+    height: 700px;
+    position: absolute;
+    transition: 1.5s ease;
+
+}
+.three{
+    background-image: url('../images/slide-3.svg'); 
+    background-repeat: no-repeat;
+    width: 1024px;
+    height: 700px;
+    position: absolute;
+    transition: 1.5s ease;
+}
+
+.four{
+    background-image: url('../images/slide-2.svg'); 
+    background-repeat: no-repeat;
+    width: 1024px;
+    height: 700px;
+    position: absolute;
+    transition: 1.5s ease;
+  
+}
+
+button{
+    display: none;
+}
+menu{
+    visibility: hidden;
+   
+}
+
+.five{
+    background-image: url('../images/slide-5.svg'); 
+    background-repeat: no-repeat;
+    width: 1024px;
+    height: 700px;
+    position: absolute;
+    transition: 1.5s ease;
+
+}
+
+/* form */
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+	
+    header nav {
+      display: none;
+    }
+  
+    header button {
+      display: block;
+      cursor: pointer;
+      height: 60px;
+      padding: 1rem;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 20;
+      background-color: transparent;
+      border: 0;
+    }
+  
+    header button span {
+      background-color: #ffa102;
+      display: block;
+      height: 4px;
+      margin-top: 5px;
+      transition: all 0.2s linear;
+      width: 30px;
+    }
+  
+  
+    menu {
+      background-color: white;
+      color: white;
+      height: 100%;
+      left: 140%;
+      right: -100%;
+      margin: 0;
+      padding: var(--base-space);
+      position: fixed;
+      top: 0;
+      transition: all 0.4s ease-in-out;
+      visibility: hidden;
+      width: 100%;
+      z-index: 10;
+      display: block;
+    }
+  
+    menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+    menu li {
+      margin-bottom: 0.5rem;
+    }
+  
+    menu a:hover {
+      border-bottom: 1px solid #ffa102;
+    }
+  
+    menu a:active {
+      border-bottom: 1px solid #ffa102;
+    }
+  
+    .menu-open menu {
+      left: 75%;
+      visibility: visible;
+    }
+  
+    .menu-open header button span:first-of-type {
+      background-color: #ffa102;
+      margin-top: 0px;
+      transform: rotate(-45deg);
+    }
+  
+    .menu-open header button span:nth-of-type(2) {
+      opacity: 0;
+    }
+  
+    .menu-open header button span:last-of-type {
+      background-color: #ffa102;
+      margin-top: -13px;
+      transform: rotate(45deg);
+    }
+
+}

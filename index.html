@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Switch on</title>
+</head>
+<body>
+  <header>
+	 <picture>
+		<img class="logo" src="images/switch_on.svg"/>
+	 </picture>
+		<nav> 
+			<ul class = "navigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Books</a></li>
+				<li><a href="#">Interactive Stories</a></li>
+			</ul>
+		</nav>
+		<button
+        id="js-burguer-button"
+        aria-hidden="true"
+        aria-label="Main menu"
+        aria-expanded="false"
+        >
+        <span></span>
+        <span></span>
+        <span></span>
+	  </button>
+
+	<section class = "boxText">
+		<h1> SWITCH YOUR CREATIVITY</h1>	
+		<div id="whiteButton">ON</div>
+	</section>
+
+    <section>
+	    <div class = "scrollDown">
+		<img class="arrow" src="images/scroll_down.svg"/> 
+	    </div>
+    </section>	
+ </header>
+
+	<main id = "content">
+
+		<section class= "quotes">
+			<img class="icon-quotes" src="images/quotes.svg"/>
+			<p>When drawing the sun, try to have on hand colored paper, chalk, felt-tip markers, crayons, pencils, ball point pens. You can draw a sun with any one of them. Also remember that sunset and dawn are the back and front of the same phenomenon: when we are looking at the sunset, the people over there are looking at the dawn.</p>
+			<author><b>Bruno Munari</author></p>
+			<h2> THREE STEPS OF CREATIVITY</h2>
+		</section>
+
+		<section class = "allSection">
+		<section class = "circle">
+			<div class = "observe">
+			<li id="blm-animation" class="animation-container"></li>
+			<h3>OBSERVE</h3>
+			<p>"I just sit back and observe. You learn more that way."</p>
+		</div>
+	
+		<div class = "observe">
+			<li id="blm-animation-two" class="animation-container-two"></li>
+			<h3>THINK</h3>
+			<p>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+		</div>
+	
+		<div class = "observe">
+			<li id="blm-animation-three" class="animation-container-three"></li>
+			<h3>CREATE</h3>
+			<p>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+		</div>
+		</section>
+	</section>
+
+	<section class = "container-box">
+		<h2>PLAY WITH IMAGES</h2>
+		  <section class = "twoContainer">
+
+			  <li class = "first-image">
+				 <a href="exercises/the-perception-fog/">
+			      <div class="image-wrapper">
+			       <img class="image" src="images/fog.jpg"/>
+			      </div>
+			      <div class="text-container">
+				     <p>THE PERSEPTION OF FOG</p>
+				  </div>
+		         </a>
+			  </li>
+
+			  <li class = "first-image">
+			    <div class="image-wrapper">
+			      <img class="image" src="images/image_1.jpg"/>
+			    </div>
+			    <div class="text-container">
+				   <p>second exercise</p>
+			    </div>
+			  </li>
+	</section>
+
+		<section class = "twoContainer">
+            <li class = "first-image">
+			  <div class="image-wrapper">
+				<img class="image" src="images/image_1.jpg"/>
+			  </div>
+			  <div class="text-container">
+				 <p>third exercise</p>
+			  </div>
+			</li>
+
+			<li class = "first-image">
+				<div class="image-wrapper">
+				 <img class="image" src="images/image_1.jpg"/>
+			  </div>
+			   <div class="text-container">
+				  <p>fourth exercise</p>
+			  </div>
+			 </li>
+		</section>	
+	</section>
+
+</main>
+
+<footer class="site-footer">
+
+	<section>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum beatae in dignissimos molestias esse, suscipit ullam eligendi fugit quo molestiae iure, sint nam, quae non officiis ad obcaecati autem tenetur?</p>
+	</section>
+
+	<section class = "form">
+		<h3>Share your ideas with us</h3>
+		
+		<div class = "form-field">
+			<label for = "nome">Name</label>
+			<input type = "text" id = "name"
+			name = "name"/>
+		</div>
+
+		<div class = "form-field">
+			<label for = "email">Email address</label>
+			<input type = "email" id = "email"
+			name = "email"/>
+		</div>
+
+		<div class = "form-field--textarea">
+			<label for = "message">Let us know what you think</label>
+			<textarea name = "message" id = "message" cols = "30" row = "10"></textarea>
+		</div>
+
+		<div>	
+		<input type = "submit" value = "Send message" class = "submit"/>
+		</div>
+    </section>
+	
+	<section>
+		<div class = "follow">Follow us</div>
+		<div  id="contact-bar">
+			<ul class="list-inline text-center">
+			  <li>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			  </li>
+			  <li>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+			  </li>
+			  <li>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+			  </li>
+			</ul>
+		  </div>
+	</section>
+</footer>
+
+	<menu>
+		<nav role="navigation">
+		  <ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Books</a></li>
+			<li><a href="#">Interactive Stories</a></li>
+		  </ul>
+		</nav>
+	</menu>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
